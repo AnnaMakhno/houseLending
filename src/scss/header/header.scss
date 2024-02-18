@@ -1,0 +1,49 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $accent-color-bg;
+  &--row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+      display: flex;
+      align-items: center;
+
+      .logo-header__text {
+        margin-left: 8px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        color: $accent-color;
+      }
+    }
+
+    &__navigation {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+
+      .navigation-header__link {
+        font-size: 20px;
+        line-height: 1.15;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+
+      .navigation-header__svg {
+        svg:hover path {
+          transition: all 0.2s ease-in;
+          stroke: $accent-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.comand {
+  &--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__img {
+      height: 440px;
+      min-width: 445px;
+    }
+    &__content {
+      margin-left: 30px;
+      margin-top: 90px;
+      .content-comand__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+      .content-comand__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .content-comand__photos {
+        display: flex;
+        gap: 30px;
+      }
+    }
+  }
+}
